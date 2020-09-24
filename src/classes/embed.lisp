@@ -9,7 +9,7 @@
 									 :type (or null string)
 									 :accessor icon)
    (icon-proxy-url :initarg :icon-proxy-url
-									 :type string
+									 :type (or null string)
 									 :accessor icon-proxy)))
 
 (defmethod from-json ((c (eql :e-footer)) (table hash-table))
